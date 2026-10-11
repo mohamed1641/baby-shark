@@ -1,0 +1,17 @@
+name: Validate static site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Validate site references
+        run: python3 scripts/validate_site.py
+      - name: Check JavaScript syntax
+        run: node --check assets/js/main.js

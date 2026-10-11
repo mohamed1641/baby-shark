@@ -1,0 +1,24 @@
+HOW TO USE REAL PRODUCT PHOTOS (LOCAL)
+=================================
+مهم: بيئة التشغيل هنا لا تسمح بتحميل صور من الإنترنت، لذلك الصور الحالية داخل المشروع "Placeholder" بشكل فوتوغرافي.
+علشان تحط صورك الحقيقية 100%:
+
+1) صور المنتجات (20 صورة)
+- ضع صورك داخل: assets/images/products/
+- وسمّها: p1.jpg ... p20.jpg
+- نفس الأسماء دي هتظهر تلقائيًا في المتجر والهوم.
+
+2) صور الهيدر (Hero)
+- ضع 3 صور داخل: assets/images/hero/
+- وسمّها: hero-1.jpg / hero-2.jpg / hero-3.jpg
+
+3) صور الأقسام
+- ضع صور داخل: assets/images/categories/
+- وسمّها:
+  cat-newborn.jpg
+  cat-diapers.jpg
+  cat-feeding.jpg
+  cat-bath.jpg
+  cat-toys.jpg
+
+لو رفعتلي zip فيه الصور، أدمجهم لك وأرجعلك نسخة نهائية بنفس التصميم.

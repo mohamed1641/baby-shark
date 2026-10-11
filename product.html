@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baby Shark | تفاصيل المنتج</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__right">
+        <span class="chip chip--info">شحن سريع داخل مصر</span>
+        <span class="sep">•</span>
+        <span class="muted">استبدال واسترجاع خلال 14 يوم</span>
+      </div>
+      <div class="topbar__left">
+        <a class="topbar__link" href="tel:+201000000000" aria-label="اتصل بنا">📞 0100 000 0000</a>
+        <a class="topbar__link" href="#" aria-label="واتساب">💬 واتساب</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" id="siteHeader">
+    <div class="container header__row">
+      <button class="icon-btn header__burger" id="burgerBtn" type="button" aria-label="فتح القائمة">☰</button>
+
+      <a class="logo" href="index.html" aria-label="Baby Shark">
+        <img src="assets/images/ui/logo.jpg" alt="Baby Shark" />
+        <div class="logo__text">
+          <strong>Baby Shark</strong>
+          <span>لوازم الأطفال وحديثي الولادة</span>
+        </div>
+      </a>
+
+      <form class="search" id="searchForm" role="search">
+        <input id="searchInput" type="search" placeholder="ابحث عن منتج… (مثال: حفاضات / ببرونة)" aria-label="بحث" />
+        <button class="btn btn--primary" type="submit">بحث</button>
+      </form>
+
+      <div class="header__icons">
+        <a class="icon-link" href="auth.html" title="حسابي" aria-label="حسابي">
+          <span class="icon">👤</span>
+          <span class="icon-label">حسابي</span>
+        </a>
+
+        <a class="icon-link" href="wishlist.html" title="المفضلة" aria-label="المفضلة">
+          <span class="icon">💙</span>
+          <span class="icon-label">المفضلة</span>
+          <span class="badge" id="wishlistBadge">0</span>
+        </a>
+
+        <a class="icon-link" href="cart.html" title="سلة المشتريات" aria-label="سلة المشتريات">
+          <span class="icon">🛒</span>
+          <span class="icon-label">السلة</span>
+          <span class="badge" id="cartBadge">0</span>
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="container nav__row">
+        <div class="nav__left">
+          <div class="dropdown" id="catsDropdown">
+            <button class="btn btn--ghost dropdown__btn" type="button" aria-haspopup="true" aria-expanded="false">
+              جميع الأقسام <span class="caret">▾</span>
+            </button>
+            <div class="dropdown__menu" role="menu" aria-label="الأقسام">
+              <a href="shop.html?cat=newborn" role="menuitem">حديثي الولادة</a>
+              <a href="shop.html?cat=diapers" role="menuitem">حفاضات ومناديل</a>
+              <a href="shop.html?cat=feeding" role="menuitem">الرضاعة والببرونات</a>
+              <a href="shop.html?cat=bath" role="menuitem">الاستحمام والعناية</a>
+              <a href="shop.html?cat=toys" role="menuitem">ألعاب تعليمية</a>
+              <a href="packages.html" role="menuitem" class="highlight">باقات المولود</a>
+            </div>
+          </div>
+
+          <a class="nav__link" href="index.html">الرئيسية</a>
+          <a class="nav__link is-active" href="shop.html">المتجر</a>
+          <a class="nav__link" href="packages.html">الباقات</a>
+          <a class="nav__link" href="contact.html">اتصل بنا</a>
+        </div>
+
+        <div class="nav__right">
+          <span class="mini">خصم <b>10%</b> على أول طلب — كود: <b>BABY10</b></span>
+        </div>
+      </div>
+    </nav>
+
+    <aside class="drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="drawer__head">
+        <strong>القائمة</strong>
+        <button class="icon-btn" id="drawerClose" type="button" aria-label="إغلاق">✕</button>
+      </div>
+      <div class="drawer__body">
+        <a href="index.html" class="drawer__link">الرئيسية</a>
+        <a href="shop.html" class="drawer__link">المتجر</a>
+        <a href="packages.html" class="drawer__link">الباقات</a>
+        <a href="wishlist.html" class="drawer__link">المفضلة</a>
+        <a href="cart.html" class="drawer__link">السلة</a>
+        <a href="auth.html" class="drawer__link">حسابي</a>
+        <a href="contact.html" class="drawer__link">اتصل بنا</a>
+
+        <hr class="hr" />
+        <div class="drawer__section">
+          <div class="drawer__title">الأقسام</div>
+          <a href="shop.html?cat=newborn" class="drawer__link">حديثي الولادة</a>
+          <a href="shop.html?cat=diapers" class="drawer__link">حفاضات ومناديل</a>
+          <a href="shop.html?cat=feeding" class="drawer__link">الرضاعة والببرونات</a>
+          <a href="shop.html?cat=bath" class="drawer__link">الاستحمام والعناية</a>
+          <a href="shop.html?cat=toys" class="drawer__link">ألعاب تعليمية</a>
+        </div>
+      </div>
+    </aside>
+    <div class="backdrop" id="backdrop" hidden></div>
+  </header>
+
+
+<main class="page">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">الرئيسية</a> <span>›</span>
+      <a href="shop.html">المتجر</a> <span>›</span>
+      <span id="pdNameCrumb">تفاصيل المنتج</span>
+    </div>
+
+    <section class="product-page card" id="productPage">
+      <div class="product-page__media">
+        <img id="pdImg" src="assets/images/products/p1.jpg" alt="صورة المنتج" />
+        <div class="thumbs" id="pdThumbs"></div>
+      </div>
+
+      <div class="product-page__info">
+        <h1 id="pdName">—</h1>
+        <div class="rating" id="pdRating">★★★★★</div>
+        <div class="price">
+          <b id="pdPrice">—</b>
+          <span class="price__old" id="pdOld"></span>
+        </div>
+
+        <p class="muted" id="pdDesc">—</p>
+
+        <div class="row row--gap">
+          <div class="qty">
+            <button class="icon-btn" id="qtyMinus" type="button">−</button>
+            <input class="input qty__in" id="qtyVal" type="number" value="1" min="1" />
+            <button class="icon-btn" id="qtyPlus" type="button">+</button>
+          </div>
+          <button class="btn btn--primary" id="pdAdd" type="button">أضف للسلة</button>
+          <button class="btn btn--outline" id="pdWish" type="button">مفضلة 💙</button>
+        </div>
+
+        <div class="tabs" id="pdTabs">
+          <button class="tab is-active" data-tab="desc" type="button">الوصف</button>
+          <button class="tab" data-tab="details" type="button">تفاصيل</button>
+          <button class="tab" data-tab="reviews" type="button">تقييمات</button>
+        </div>
+
+        <div class="tabpanes">
+          <div class="pane is-active" data-pane="desc">
+            <ul class="list">
+              <li>بيانات تجريبية — جاهزة للاستبدال ببيانات Django.</li>
+              <li>تصميم مناسب للموبايل.</li>
+            </ul>
+          </div>
+          <div class="pane" data-pane="details">
+            <div class="muted">مواصفات المنتج (حجم/خامة/العمر…)</div>
+          </div>
+          <div class="pane" data-pane="reviews">
+            <div class="muted">قسم التقييمات (UI فقط).</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head section__head--row">
+        <div>
+          <h3>منتجات مشابهة</h3>
+          <p class="muted">اقتراحات من نفس القسم.</p>
+        </div>
+        <a class="btn btn--ghost" href="shop.html">رجوع للمتجر</a>
+      </div>
+      <div class="grid products products--dense" id="relatedGrid"></div>
+    </section>
+  </div>
+</main>
+
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="footer__brand">
+          <img src="assets/images/ui/logo.jpg" alt="Baby Shark" />
+          <div>
+            <b>Baby Shark</b>
+            <div class="muted">متجر لوازم الأطفال وحديثي الولادة</div>
+          </div>
+        </div>
+        <p class="muted">Front-end جاهز للربط مع Django — حالياً بيانات تجريبية.</p>
+      </div>
+
+      <div>
+        <b class="footer__title">روابط سريعة</b>
+        <a href="shop.html">المتجر</a>
+        <a href="packages.html">الباقات</a>
+        <a href="wishlist.html">المفضلة</a>
+        <a href="cart.html">السلة</a>
+      </div>
+
+      <div>
+        <b class="footer__title">خدمة العملاء</b>
+        <a href="policies.html">الشحن والتوصيل</a>
+        <a href="policies.html#returns">الاسترجاع</a>
+        <a href="policies.html#privacy">الخصوصية</a>
+      </div>
+
+      <div>
+        <b class="footer__title">تواصل</b>
+        <a href="contact.html">اتصل بنا</a>
+        <a href="#">واتساب</a>
+        <a href="#">فيسبوك</a>
+        <a href="#">إنستجرام</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottomRow">
+        <span>© <span id="year"></span> Baby Shark — جميع الحقوق محفوظة</span>
+        <span class="muted">Front-end Only</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

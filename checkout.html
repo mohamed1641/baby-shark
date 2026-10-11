@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baby Shark | إتمام الشراء</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__right">
+        <span class="chip chip--info">شحن سريع داخل مصر</span>
+        <span class="sep">•</span>
+        <span class="muted">استبدال واسترجاع خلال 14 يوم</span>
+      </div>
+      <div class="topbar__left">
+        <a class="topbar__link" href="tel:+201000000000" aria-label="اتصل بنا">📞 0100 000 0000</a>
+        <a class="topbar__link" href="#" aria-label="واتساب">💬 واتساب</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" id="siteHeader">
+    <div class="container header__row">
+      <button class="icon-btn header__burger" id="burgerBtn" type="button" aria-label="فتح القائمة">☰</button>
+
+      <a class="logo" href="index.html" aria-label="Baby Shark">
+        <img src="assets/images/ui/logo.jpg" alt="Baby Shark" />
+        <div class="logo__text">
+          <strong>Baby Shark</strong>
+          <span>لوازم الأطفال وحديثي الولادة</span>
+        </div>
+      </a>
+
+      <form class="search" id="searchForm" role="search">
+        <input id="searchInput" type="search" placeholder="ابحث عن منتج… (مثال: حفاضات / ببرونة)" aria-label="بحث" />
+        <button class="btn btn--primary" type="submit">بحث</button>
+      </form>
+
+      <div class="header__icons">
+        <a class="icon-link" href="auth.html" title="حسابي" aria-label="حسابي">
+          <span class="icon">👤</span>
+          <span class="icon-label">حسابي</span>
+        </a>
+
+        <a class="icon-link" href="wishlist.html" title="المفضلة" aria-label="المفضلة">
+          <span class="icon">💙</span>
+          <span class="icon-label">المفضلة</span>
+          <span class="badge" id="wishlistBadge">0</span>
+        </a>
+
+        <a class="icon-link" href="cart.html" title="سلة المشتريات" aria-label="سلة المشتريات">
+          <span class="icon">🛒</span>
+          <span class="icon-label">السلة</span>
+          <span class="badge" id="cartBadge">0</span>
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="container nav__row">
+        <div class="nav__left">
+          <div class="dropdown" id="catsDropdown">
+            <button class="btn btn--ghost dropdown__btn" type="button" aria-haspopup="true" aria-expanded="false">
+              جميع الأقسام <span class="caret">▾</span>
+            </button>
+            <div class="dropdown__menu" role="menu" aria-label="الأقسام">
+              <a href="shop.html?cat=newborn" role="menuitem">حديثي الولادة</a>
+              <a href="shop.html?cat=diapers" role="menuitem">حفاضات ومناديل</a>
+              <a href="shop.html?cat=feeding" role="menuitem">الرضاعة والببرونات</a>
+              <a href="shop.html?cat=bath" role="menuitem">الاستحمام والعناية</a>
+              <a href="shop.html?cat=toys" role="menuitem">ألعاب تعليمية</a>
+              <a href="packages.html" role="menuitem" class="highlight">باقات المولود</a>
+            </div>
+          </div>
+
+          <a class="nav__link" href="index.html">الرئيسية</a>
+          <a class="nav__link is-active" href="shop.html">المتجر</a>
+          <a class="nav__link" href="packages.html">الباقات</a>
+          <a class="nav__link" href="contact.html">اتصل بنا</a>
+        </div>
+
+        <div class="nav__right">
+          <span class="mini">خصم <b>10%</b> على أول طلب — كود: <b>BABY10</b></span>
+        </div>
+      </div>
+    </nav>
+
+    <aside class="drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="drawer__head">
+        <strong>القائمة</strong>
+        <button class="icon-btn" id="drawerClose" type="button" aria-label="إغلاق">✕</button>
+      </div>
+      <div class="drawer__body">
+        <a href="index.html" class="drawer__link">الرئيسية</a>
+        <a href="shop.html" class="drawer__link">المتجر</a>
+        <a href="packages.html" class="drawer__link">الباقات</a>
+        <a href="wishlist.html" class="drawer__link">المفضلة</a>
+        <a href="cart.html" class="drawer__link">السلة</a>
+        <a href="auth.html" class="drawer__link">حسابي</a>
+        <a href="contact.html" class="drawer__link">اتصل بنا</a>
+
+        <hr class="hr" />
+        <div class="drawer__section">
+          <div class="drawer__title">الأقسام</div>
+          <a href="shop.html?cat=newborn" class="drawer__link">حديثي الولادة</a>
+          <a href="shop.html?cat=diapers" class="drawer__link">حفاضات ومناديل</a>
+          <a href="shop.html?cat=feeding" class="drawer__link">الرضاعة والببرونات</a>
+          <a href="shop.html?cat=bath" class="drawer__link">الاستحمام والعناية</a>
+          <a href="shop.html?cat=toys" class="drawer__link">ألعاب تعليمية</a>
+        </div>
+      </div>
+    </aside>
+    <div class="backdrop" id="backdrop" hidden></div>
+  </header>
+
+
+<main class="page">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">الرئيسية</a> <span>›</span> <a href="cart.html">السلة</a> <span>›</span> <span>الدفع</span>
+    </div>
+
+    <div class="page__head">
+      <h1>إتمام الشراء</h1>
+      <p class="muted">نموذج تجريبي — عند الربط مع Django يتحول لطلب حقيقي.</p>
+    </div>
+
+    <div class="checkout">
+      <section class="card">
+        <form id="checkoutForm" class="form">
+          <div class="row">
+            <div>
+              <label class="lbl">الاسم</label>
+              <input class="input" required placeholder="اسمك" />
+            </div>
+            <div>
+              <label class="lbl">الموبايل</label>
+              <input class="input" required placeholder="01xxxxxxxxx" />
+            </div>
+          </div>
+
+          <label class="lbl">العنوان</label>
+          <input class="input" required placeholder="المحافظة - المدينة - الشارع" />
+
+          <label class="lbl">ملاحظات (اختياري)</label>
+          <textarea class="input" rows="4" placeholder="ملاحظات للتوصيل…"></textarea>
+
+          <div class="pay">
+            <b>طريقة الدفع</b>
+            <label class="radio"><input type="radio" name="pay" checked /> كاش عند الاستلام</label>
+            <label class="radio"><input type="radio" name="pay" /> أونلاين (لاحقاً)</label>
+          </div>
+
+          <button class="btn btn--primary btn--block" type="submit">تجربة تأكيد الطلب</button>
+        </form>
+
+        <div class="success card" id="checkoutSuccess" hidden>
+          <h3>محاكاة استلام الطلب ✅</h3>
+          <p class="muted">ده تأكيد تجريبي. عند الربط مع Django هنطلع رقم طلب حقيقي.</p>
+          <a class="btn btn--outline" href="shop.html">العودة للمتجر</a>
+        </div>
+      </section>
+
+      <aside class="card summary">
+        <b>ملخص</b>
+        <div class="summary__row"><span class="muted">عدد العناصر</span><b id="coCount">0</b></div>
+        <div class="summary__row"><span class="muted">الإجمالي</span><b id="coTotal">0ج</b></div>
+        <hr class="hr" />
+        <div class="muted small">* الأسعار تجريبية.</div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="footer__brand">
+          <img src="assets/images/ui/logo.jpg" alt="Baby Shark" />
+          <div>
+            <b>Baby Shark</b>
+            <div class="muted">متجر لوازم الأطفال وحديثي الولادة</div>
+          </div>
+        </div>
+        <p class="muted">Front-end جاهز للربط مع Django — حالياً بيانات تجريبية.</p>
+      </div>
+
+      <div>
+        <b class="footer__title">روابط سريعة</b>
+        <a href="shop.html">المتجر</a>
+        <a href="packages.html">الباقات</a>
+        <a href="wishlist.html">المفضلة</a>
+        <a href="cart.html">السلة</a>
+      </div>
+
+      <div>
+        <b class="footer__title">خدمة العملاء</b>
+        <a href="policies.html">الشحن والتوصيل</a>
+        <a href="policies.html#returns">الاسترجاع</a>
+        <a href="policies.html#privacy">الخصوصية</a>
+      </div>
+
+      <div>
+        <b class="footer__title">تواصل</b>
+        <a href="contact.html">اتصل بنا</a>
+        <a href="#">واتساب</a>
+        <a href="#">فيسبوك</a>
+        <a href="#">إنستجرام</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottomRow">
+        <span>© <span id="year"></span> Baby Shark — جميع الحقوق محفوظة</span>
+        <span class="muted">Front-end Only</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
